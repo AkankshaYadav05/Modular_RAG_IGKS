@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+chromadb
+
+sentence-transformers
+torch
+
+rank-bm25
+
+langchain
+langchain-groq
+
+python-dotenv
+pydantic
+pydantic-settings
+
+numpy
