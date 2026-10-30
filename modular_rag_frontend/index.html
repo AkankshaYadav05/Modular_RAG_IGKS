@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f8fc">
+  <meta name="description" content="Intelligent Governance Knowledge Engine — discover answers in official education documents.">
+  <link rel="icon" href="data:,">
+  <title>IGKE — Intelligent Governance Knowledge Engine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="government-header">
+      <a class="ministry-brand" href="#dashboard" aria-label="Ministry of Education home">
+        <span class="emblem" aria-hidden="true">अ</span>
+        <span class="ministry-copy"><strong>Government of India</strong><b>Ministry of Education</b></span>
+      </a>
+      <span class="header-divider"></span>
+      <a class="product-brand" href="#dashboard">
+        <strong>Intelligent Governance Knowledge Engine</strong>
+        <span>AI-powered knowledge retrieval for official education documents</span>
+      </a>
+      <div class="header-right">
+        <div class="tricolor" aria-label="Tricolor accent"><i></i><i></i><i></i></div>
+        <span class="bharat-brand"><strong>Viksit Bharat</strong><small>Viksit Shiksha</small></span>
+        <button class="header-icon notification-button" type="button" aria-label="Notifications">♧<span class="notification-count">3</span></button>
+        <button class="user-menu" id="user-menu" type="button" aria-label="Open sign-in preview"><span class="user-avatar">S</span><span><strong>Sanika Umdale</strong><small>Ministry Official</small></span><span class="user-chevron">⌄</span></button>
+      </div>
+    </header>
+
+    <div class="workspace">
+      <aside class="sidebar" aria-label="Main navigation">
+        <div class="sidebar-scroll">
+          <div class="nav-group">
+            <button class="nav-link active" type="button" data-page="dashboard"><span class="nav-icon">⌂</span>Dashboard</button>
+            <button class="nav-link" type="button" data-page="search"><span class="nav-icon">⌕</span>AI Knowledge Search</button>
+            <button class="nav-link" type="button" data-page="documents"><span class="nav-icon">▤</span>Documents</button>
+            <button class="nav-link" type="button" data-page="comparison"><span class="nav-icon">⚖</span>Policy Comparison</button>
+            <button class="nav-link" type="button" data-page="saved"><span class="nav-icon">▮</span>Saved Documents</button>
+            <button class="nav-link" type="button" data-page="history"><span class="nav-icon">◷</span>Query History</button>
+          </div>
+          <div class="nav-section-label">ADMINISTRATION</div>
+          <div class="nav-group">
+            <button class="nav-link" type="button" data-page="upload"><span class="nav-icon">⇧</span>Upload Documents</button>
+            <button class="nav-link" type="button" data-page="knowledge"><span class="nav-icon">▤</span>Knowledge Base</button>
+            <button class="nav-link" type="button" data-page="users"><span class="nav-icon">♧</span>Users &amp; Roles</button>
+            <button class="nav-link" type="button" data-page="audit"><span class="nav-icon">☷</span>Audit Logs</button>
+            <button class="nav-link" type="button" data-page="settings"><span class="nav-icon">⚙</span>System Settings</button>
+          </div>
+        </div>
+        <div class="sidebar-bottom">
+          <div class="bharat-card"><div class="brush-tricolor"><i></i><i></i><i></i><span>✦</span></div><strong>Quality Education<br>Stronger India</strong></div>
+          <div class="sidebar-foot">Ministry of Education<br><span>Government of India</span></div>
+        </div>
+      </aside>
+
+      <main class="main-area">
+        <div id="page-content" class="page-content" aria-live="polite"></div>
+        <footer class="footer"><span>Ministry of Education&nbsp;&nbsp; | &nbsp;&nbsp;Government of India</span><div><a href="#" data-static-link>Sitemap</a><a href="#" data-static-link>Privacy Policy</a><a href="#" data-static-link>Terms of Use</a><a href="#" data-static-link>Help</a><span class="footer-tricolor"></span><strong>जय हिन्द</strong></div></footer>
+      </main>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <input id="document-picker" type="file" accept=".pdf,.doc,.docx,.txt" hidden>
+  <script src="./js/script.js" defer></script>
+</body>
+</html>
